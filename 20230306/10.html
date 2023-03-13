@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .wrap {
+            width: 980px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr)
+        }
+        
+        .item {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .item .text {
+            width: 70%;
+            position: relative;
+        }
+        
+        .item .name {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        
+        .item .pic {
+            width: 30%;
+        }
+        
+        .item .pic img {
+            width: 100%;
+            vertical-align: top;
+            /* border-image: calc(); */
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="item">
+            <div class="text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto magni officiis dignissimos und repellat! Corpori</p>
+                <p class="name">王曉明資工系</p>
+            </div>
+            <div class="pic">
+                <img src="https://picsum.photos/300/200/?random=10">
+            </div>
+        </div>
+        <div class="item">
+            <div class="text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto magni officiis dignissimos unde amet repellat! Corpori</p>
+                <p class="name">王曉明資工系</p>
+            </div>
+            <div class="pic">
+                <img src="https://picsum.photos/300/200/?random=10">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

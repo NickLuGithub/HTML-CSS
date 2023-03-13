@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .wrap {
+            width: 500px;
+            height: 600px;
+            background-color: #ccc;
+            display: flex;
+            flex-wrap: wrap;
+            /* 控制彈性列 */
+            align-content: space-around;
+            /* 控制子物件在彈性列的對齊分布 */
+            align-items: center;
+        }
+        
+        .item {
+            width: 160px;
+            height: 160px;
+            background-color: red;
+            margin: 2px;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>
