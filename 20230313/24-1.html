@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .main-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            background-color: #ccc;
+            padding: 6px;
+            position: relative;
+        }
+        
+        .logo {
+            width: 80px;
+            height: 40px;
+        }
+        
+        .logo img {
+            vertical-align: top;
+        }
+        
+        .hb {
+            width: 40px;
+            height: 40px;
+            background-color: #000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        
+        .hb span {
+            width: 80%;
+            height: 2px;
+            background-color: #fa0;
+        }
+        
+        .main-nav {
+            display: none;
+            position: absolute;
+            background-color: #fa0;
+            left: 0;
+            top: 100%;
+            width: 100%;
+        }
+        
+        .main-nav a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .main-nav a+a {
+            border-top: 1px solid #fff;
+        }
+        
+        #main-switch {
+            display: none;
+        }
+        
+        #main-switch:checked~.main-header .main-nav {
+            display: block;
+        }
+        
+        @media (width >=768px) {
+            .hb {
+                display: none;
+            }
+            .main-nav {
+                display: flex;
+                width: auto;
+                position: relative;
+                background-color: transparent;
+            }
+            .main-nav a+a {
+                border-top: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <input type="checkbox" name="" id="main-switch">
+    <header class="main-header">
+        <div class="logo">
+            <a href="#">
+                <img src="https://fakeimg.pl/80x40/200">
+            </a>
+        </div>
+
+        <label for="main-switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <div class="main-nav">
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </div>
+
+    </header>
+</body>
+
+</html>
